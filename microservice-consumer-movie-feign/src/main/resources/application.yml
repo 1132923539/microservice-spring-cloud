@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: microservice-consumer-movie-feign
+server:
+  port: 7901
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://@localhost:8081/eureka
+  instance:
+    prefer-ip-address: true
